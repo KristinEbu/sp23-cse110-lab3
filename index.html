@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>The Duck Meeting Minutes</title>
+        <meta name="description" content="Sample Meeting Minutes to practice HTML">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
+
+    <body style="font-family:'Courier New'; background-color: ivory; color: darkslategray;">
+        <header style="background-color: honeydew;">
+            <h1><strong>The Duck Meeting Minutes</strong></h1>
+            <h1><strong>Brainstorming Ideas to Prove Why Ducks Are Cool</strong></h1>
+            <h2><em><span style="color: darkcyan">4/16/23</span></em></h2>
+            <nav>
+                <a href="duck.html">Duck</a>
+            </nav>
+        </header>
+        
+        <main>
+            <!--Attendance List-->
+            <hr>
+            <div>
+                <h3>Attendance List:</h3>
+                <ol>
+                    <li>Jim McDuck</li>
+                    <li>Mick Quaxly</li>
+                    <li>Seraphina Wetters</li>
+                    <li><details>
+                            <summary>Fiona Feathers</summary>
+                            Fiona was 10 minutes late to the meeting
+                        </details>
+                    </li>
+                </ol>
+            </div>
+
+            <!--Agenda-->
+            <div>
+                <hr>
+                <h3>Agenda:</h3>
+                <ul>
+                    <li><b>Things that were unfinished business from last meeting:</b></li>
+                    <ul>
+                        <li>Establishing our Duck Fanclub</li>
+                        <li>Figuring out why ducks are so fluffy</li>
+                    </ul>
+                    <li><b>Things that are new business that need to be talked about:</b></li>
+                    <ul>
+                        <li>Plans to recruit people into our fanclub</li>
+                        <li>Make a list of cool features about ducks</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <!--Questions-->
+            <section>
+                <hr>
+                <h3>Questions that were Brought Up</h3>
+                <ul>
+                    <li>Why are ducks so hugable?</li>
+                    <li>Why do ducks make the cutest sounds?</li>
+                </ul>
+            </section>
+
+            <!--Pictures-->
+            <section>
+                <hr>
+                <h3>Pictures/Diagrams</h3>
+                <img src="/images/PARTS-OF-A-DUCK.jpg" alt="Duck-Parts" width="300" height="300">
+            </section>
+
+            <!--Video-->
+            <section>
+                <hr>
+                <h3>Video</h3>
+                <video width="150" height="250" controls>
+                <source src="/images/how_to_pick_up_a_duck.mov" type="video/mp4">
+            </section>
+
+            <!--Link to Video-->
+            <section>
+                <a href="https://www.youtube.com/watch?v=MoyF2IKXQyo&ab_channel=Seducktive">Link to the video on Youtube</a>
+            </section>
+
+            <!--Audio-->
+            <section>
+                <hr>
+                <h3>Audio</h3>
+                <audio controls>
+                <source src="/images/how_to_pick_up_a_duck_audio.mp3" type="audio/mpeg">
+            </section>
+
+            <!--Form-->
+            <section style="background-color: white;">
+                <hr>
+                <form>
+                    <fieldset>
+                        <h3>Duck Fanclub Application Form</h3>
+
+                        <!--Name-->
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+                        <br>
+
+                        <!--College-->
+                        <label for="college-choice">What college are you from?</label><br>
+                        <input list="college-list" id="college-choice" name="college-choice">
+                        <datalist id="college-list">
+                            <option value="Revelle"></option>
+                            <option value="Muir"></option>
+                            <option value="Marshall"></option>
+                            <option value="Warren"></option>
+                            <option value="ERC"></option>
+                            <option value="Sixth"></option>
+                            <option value="Seventh"></option>
+                        </datalist><br>
+                        <br>
+
+                        <!--Major-->
+                        <label for="major">What is your Major?</label><br>
+                        <select id="major">
+                            <option value="computer-science">Computer Science</option>
+                            <option value="computer-engineering">Computer Engineering</option>
+                            <option value="math-cs">Math-CS</option>
+                        </select><br>
+                        <br>
+
+                        <!--Date-->
+                        <label for="date">Current date:</label><br>
+                        <input type="date" id="curr-date" name="curr-date">
+
+                        <!--Favorite Animal-->
+                        <p>Are ducks your favorite animal?</p>
+                        <input type="radio" id="fav1" name="fav" value="yes"
+                        checked>
+                        <label for="fav1">Yes</label><br>
+                        <input type="radio" id="fav2" name="fav" value="no"
+                        checked>
+                        <label for="fav2">No</label><br>
+
+                        <!--Favorite Part-->
+                        <p>Favorite part about ducks:</p>
+                        <input type="checkbox" id="fluffiness" name="fluffiness" checked>
+                        <label for="fluffiness">Fluffiness</label><br>
+                        <input type="checkbox" id="cuteness" name="cuteness" checked>
+                        <label for="cuteness">Cuteness</label><br>
+                        <input type="checkbox" id="deliciousness" name="deliciousness" checked>
+                        <label for="deliciousness">Deliciousness</label><br>
+                        <br>
+
+                        <!--Describe-->
+                        <label for="love">Describe your love for ducks:</label><br>
+                        <textarea id="love" name="love-text" rows="4" cols="50"></textarea><br>
+
+                        <!--Submit-->
+                        <button type="button">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer style="background-color: honeydew;">
+            <p>
+                <hr>
+                <i>The Duck Meeting Notes©</i><br><b>2023</b>
+            </p>
+        </footer>
+        
+    </body>
+</html>
