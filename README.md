@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-[Link to Sample Meeting Minutes](https://kristinebu.github.io/Lab2_Starter/)
+[Link to Lab 3 GitHub Pages: Updated Meeting Notes](https://kristinebu.github.io/sp23-cse110-lab3/)
