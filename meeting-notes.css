@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(255,255,240);
+    color: #2f4f4f;
+    margin: auto;
+    max-width: 100%;
+    min-width: 25%;
+}
+
+/* Selector List */
+header, footer{
+    background-color: hsl(120, 100%, 97%);
+}
+
+header{
+    border-style: dotted;
+    border-color: saddlebrown;
+    border-width: medium;
+    border-radius: 5ex;
+    text-align: center;
+    padding: 0cm 0cm 0.5cm 0cm;
+    position: static;
+}
+
+/* Child Combinator */
+header > h1{
+    color: #396e66;
+}
+
+/* Adjacent Sibling Combinator */
+h1 + h2{
+    background-color:hsl(120, 100%, 93%);
+}
+
+/* Attribute Selector */
+a[href="duck.html"]{
+    color: seagreen;
+}
+
+main{
+    margin: 10px 15px 0px 15px;
+    display: block;
+    width: 97%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 15px;
+    }
+}
+
+/* Descendant Combinator */
+div li{
+    background-color: white;
+}
+
+/* ID Selector */
+#grid{
+    display: inline-grid;
+    grid-template-columns: 250px 400px;
+    grid-template-rows: 100px 100px;
+    justify-items: start;
+}
+
+/* General Sibling Combinator */
+h3 ~ ul{
+    background-color: white;
+}
+
+/* Class Selector */
+.media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Combining Two Selectors */
+section.media-seperate{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 100px;
+    margin-left: 0px;
+}
+
+/* Duck Fanclub Application Form */
+form{
+    background-color: white;
+}
+
+button:hover{
+    background-color: seagreen;
+}
+
+button:active{
+    background-color: saddlebrown;
+}
+
+footer{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 0mm;
+    padding-bottom: 2mm;
+    padding-right: 0mm;
+    padding-left: 0mm;
+    position: sticky;
+    bottom: 1px;
+    height: 2lh;
+    font-size: 10px;
+    border: solid honeydew
+}
+
+/* Doesn't display on actual webpage */
+.hidden{
+    display: none;
+}
