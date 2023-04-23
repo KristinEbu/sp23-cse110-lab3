@@ -5,13 +5,23 @@
         <title>The Duck Meeting Minutes</title>
         <meta name="description" content="Sample Meeting Minutes to practice HTML">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="meeting-notes.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     </head>
 
-    <body style="font-family:'Courier New'; background-color: ivory; color: darkslategray;">
-        <header style="background-color: honeydew;">
+    <style>
+        *{
+            font-family: "Handlee", "Courier New";
+        }
+    </style>
+
+    <body>
+        <header>
             <h1><strong>The Duck Meeting Minutes</strong></h1>
             <h1><strong>Brainstorming Ideas to Prove Why Ducks Are Cool</strong></h1>
-            <h2><em><span style="color: darkcyan">4/16/23</span></em></h2>
+            <h2><em><span style="color: seagreen;">4/23/23</span></em></h2>
             <nav>
                 <a href="duck.html">Duck</a>
             </nav>
@@ -33,11 +43,11 @@
                     </li>
                 </ol>
             </div>
+            <hr>
 
             <!--Agenda-->
-            <div>
-                <hr>
-                <h3>Agenda:</h3>
+            <h3>Agenda:</h3>
+            <div id="grid">
                 <h4><b>Things that were unfinished business from last meeting:</b></h4>
                 <ul>
                     <li>Establishing our Duck Fanclub</li>
@@ -59,37 +69,33 @@
                     <li>Why do ducks make the cutest sounds?</li>
                 </ul>
             </section>
+            <hr>
 
-            <!--Pictures-->
-            <section>
-                <hr>
-                <h3>Pictures/Diagrams</h3>
-                <img src="images/PARTS-OF-A-DUCK.jpg" alt="Duck-Parts" width="300" height="300">
-            </section>
+            <section class="media">
+                <!--Pictures-->
+                <section class="media-seperate">
+                    <h3>Pictures/Diagrams</h3>
+                    <img src="images/PARTS-OF-A-DUCK.jpg" alt="Duck-Parts" width="300" height="300">
+                </section>
 
-            <!--Video-->
-            <section>
-                <hr>
-                <h3>Video</h3>
-                <video width="150" height="250" controls>
-                <source src="images/how_to_pick_up_a_duck.mov" type="video/mp4"></video>
-            </section>
+                <!--Video-->
+                <section class="media-seperate">
+                    <h3>Video</h3>
+                    <video width="150" height="250" controls>
+                    <source src="images/how_to_pick_up_a_duck.mov" type="video/mp4"></video><br>
+                    <a href="https://www.youtube.com/watch?v=MoyF2IKXQyo&ab_channel=Seducktive">Video on Youtube</a>
+                </section>
 
-            <!--Link to Video-->
-            <section>
-                <a href="https://www.youtube.com/watch?v=MoyF2IKXQyo&ab_channel=Seducktive">Link to the video on Youtube</a>
-            </section>
-
-            <!--Audio-->
-            <section>
-                <hr>
-                <h3>Audio</h3>
-                <audio controls>
-                <source src="images/how_to_pick_up_a_duck_audio.mp3" type="audio/mpeg"></audio>
+                <!--Audio-->
+                <section class="media-seperate">
+                    <h3>Audio</h3>
+                    <audio controls>
+                    <source src="images/how_to_pick_up_a_duck_audio.mp3" type="audio/mpeg"></audio>
+                </section>
             </section>
 
             <!--Form-->
-            <section style="background-color: white;">
+            <section>
                 <hr>
                 <form>
                     <fieldset>
@@ -159,10 +165,11 @@
             </section>
         </main>
 
-        <footer style="background-color: honeydew;">
-            <hr>
+        <footer>
             <p><i>The Duck Meeting Notes©</i><br><b>2023</b></p>
         </footer>
+
+        <p class="hidden">you found me!!</p>
         
     </body>
 </html>
